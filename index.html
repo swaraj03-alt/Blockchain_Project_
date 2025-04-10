@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blockchain Wallet UI</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="light-beam">
+    <div class="beam"></div>
+    <div class="beam"></div>
+    <div class="beam"></div>
+    <div class="beam"></div>
+    <div class="beam"></div>
+    <div class="beam"></div>
+    <div class="beam"></div>
+    <div class="beam"></div>
+  </div>
+
+  <div class="main-container">
+    <div class="wallet-card">
+      <div class="icon-container fade-in">
+        <img src="img-removebg-preview.png" alt="Crypto Wallet Icon" class="wallet-icon">
+      </div>
+
+      <div class="line fade-in delay-1">
+        <h1 class="headline">Simple Blockchain Wallet</h1>
+      </div>
+
+      <div class="line fade-in delay-2">
+        <button id="connectButton">Connect MetaMask</button>
+        <p id="walletAddress">Not Connected</p>
+      </div>
+
+      <div class="line fade-in delay-3">
+        <button id="sendTransactionButton" disabled>Send Transaction</button>
+        <p id="walletBalance">Balance: --</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
